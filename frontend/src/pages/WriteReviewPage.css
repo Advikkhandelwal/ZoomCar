@@ -1,0 +1,63 @@
+.write-review-page {
+    padding: 4rem 0;
+    min-height: 80vh;
+    background-color: var(--color-gray-50);
+}
+
+.review-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.booking-summary {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-gray-200);
+    align-items: center;
+}
+
+.car-thumbnail {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+.star-rating-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.star-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-gray-300);
+    padding: 0;
+    transition: transform 0.2s;
+}
+
+.star-btn:hover {
+    transform: scale(1.1);
+}
+
+.star-btn.active {
+    color: #ffd700;
+    /* Gold */
+}
+
+.error-message {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.error-message h2 {
+    color: var(--color-error);
+    margin-bottom: 1rem;
+}
