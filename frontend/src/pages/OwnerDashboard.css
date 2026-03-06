@@ -1,0 +1,301 @@
+.owner-dashboard {
+    padding: var(--spacing-2xl) 0;
+    min-height: calc(100vh - 80px);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.dashboard-header h1 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin: 0;
+}
+
+.dashboard-tabs {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+    border-bottom: 2px solid var(--color-gray-200);
+}
+
+.tab {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-700);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    margin-bottom: -2px;
+}
+
+.tab:hover {
+    color: var(--color-primary);
+}
+
+.tab.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+}
+
+.dashboard-content {
+    min-height: 400px;
+}
+
+.loading-state,
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-3xl);
+    text-align: center;
+}
+
+.empty-state svg {
+    color: var(--color-gray-500);
+    margin-bottom: var(--spacing-lg);
+}
+
+.empty-state h3 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.empty-state p {
+    color: var(--color-gray-700);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Cars List */
+.cars-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.car-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    transition: box-shadow var(--transition-base);
+}
+
+.car-item:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.car-item-image {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+.car-item-details {
+    flex: 1;
+}
+
+.car-item-details h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.car-item-location {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+    margin-bottom: var(--spacing-xs);
+}
+
+.car-item-price {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.car-item-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+/* Bookings List */
+.bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.booking-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+}
+
+.booking-info h4 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.booking-info p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+    margin-bottom: var(--spacing-xs);
+}
+
+.booking-info p:last-child {
+    margin-bottom: 0;
+}
+
+.booking-status {
+    text-align: right;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+}
+
+.status-badge.pending {
+    background-color: #FFF4E6;
+    color: var(--color-warning);
+}
+
+.status-badge.confirmed {
+    background-color: #E6F7F1;
+    color: var(--color-success);
+}
+
+.status-badge.cancelled {
+    background-color: #FFE6E6;
+    color: var(--color-error);
+}
+
+.booking-price {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-black);
+    margin: 0;
+}
+
+/* Earnings View */
+.earnings-view {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+}
+
+.earnings-card {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    color: var(--color-white);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+}
+
+.earnings-card h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--spacing-md);
+    opacity: 0.9;
+}
+
+.earnings-amount {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-bold);
+    margin: 0;
+}
+
+.earnings-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.stat-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+}
+
+.stat-value {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-700);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
+
+    .dashboard-header h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .car-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .car-item-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .car-item-actions {
+        width: 100%;
+    }
+
+    .car-item-actions .btn {
+        flex: 1;
+    }
+
+    .booking-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-md);
+    }
+
+    .booking-status {
+        text-align: left;
+        width: 100%;
+    }
+
+    .earnings-stats {
+        grid-template-columns: 1fr;
+    }
+}
