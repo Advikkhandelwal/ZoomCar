@@ -1,0 +1,89 @@
+.availability-calendar {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.calendar-header button {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+.calendar-header h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+    text-align: center;
+}
+
+.calendar-day-header {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #666;
+    padding-bottom: 0.5rem;
+}
+
+.calendar-day {
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: default;
+}
+
+.calendar-day.empty {
+    background: none;
+}
+
+.calendar-day.available {
+    background-color: #f0fdf4;
+    color: #166534;
+}
+
+.calendar-day.booked {
+    background-color: #fef2f2;
+    color: #991b1b;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.calendar-day.past {
+    color: #ccc;
+    background-color: #f9f9f9;
+}
+
+.calendar-legend {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
