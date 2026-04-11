@@ -1,0 +1,177 @@
+.booking-page {
+    padding: var(--spacing-2xl) 0;
+    min-height: calc(100vh - 80px);
+    background-color: var(--color-gray-100);
+}
+
+.booking-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.booking-title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-2xl);
+    text-align: center;
+}
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-2xl);
+}
+
+/* Car Details */
+.booking-car-details {
+    background-color: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+.car-image {
+    width: 100%;
+    height: 300px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: var(--spacing-lg);
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-info h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.car-location {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--color-gray-700);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Booking Summary */
+.booking-summary {
+    background-color: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.booking-summary h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-lg);
+}
+
+.summary-section {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.summary-section:last-of-type {
+    border-bottom: none;
+}
+
+.summary-section h4 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-gray-700);
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+}
+
+.summary-divider {
+    height: 1px;
+    background-color: var(--color-gray-300);
+    margin: var(--spacing-md) 0;
+}
+
+.summary-total {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-black);
+}
+
+.booking-note {
+    text-align: center;
+    font-size: var(--font-size-xs);
+    color: var(--color-gray-700);
+    margin-top: var(--spacing-md);
+    margin-bottom: 0;
+}
+
+/* Confirmation Screen */
+.booking-confirmation {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.confirmation-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-success) 0%, #008A80 100%);
+    border-radius: 50%;
+    color: var(--color-white);
+}
+
+.confirmation-title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.confirmation-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-lg);
+    text-align: left;
+    margin-top: var(--spacing-xl);
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.confirmation-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.confirmation-actions .btn {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .booking-layout {
+        grid-template-columns: 1fr;
+    }
+}
