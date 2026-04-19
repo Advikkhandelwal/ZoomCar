@@ -32,12 +32,6 @@
     transition: transform var(--transition-fast);
 }
 
-.navbar-logo-img {
-    height: 48px;
-    width: auto;
-    object-fit: contain;
-}
-
 .navbar-logo:hover {
     transform: scale(1.05);
 }

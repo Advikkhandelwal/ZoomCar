@@ -19,13 +19,12 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="container">
                 <div className="navbar-content">
-                    {/* Logo */}
-                    <Link to="/" className="navbar-logo">
-                        <img src="/logo.png" alt="ZoomCar Logo" className="navbar-logo-img" />
-                        <span className="navbar-logo-text">ZoomCar</span>
-                    </Link>
+                        {/* Logo */}
+                        <Link to="/" className="navbar-logo">
+                            <span className="navbar-logo-text">ZoomCar</span>
+                        </Link>
 
-                    {/* Desktop Navigation */}
+                        {/* Desktop Links */}
                     <div className="navbar-links">
                         {isAuthenticated && (
                             <Link to="/become-host" className="navbar-link">

@@ -24,12 +24,6 @@
     margin-bottom: var(--spacing-md);
 }
 
-.footer-logo-img {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
-}
-
 .footer-title {
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-extrabold);

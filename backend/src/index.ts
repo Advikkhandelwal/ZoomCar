@@ -1,6 +1,8 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express, { Request, Response, NextFunction } from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 import path from "path";
 
 // Routes
@@ -13,8 +15,6 @@ import userRoutes from "./routes/user.routes";
 import favoritesRoutes from "./routes/favorites.routes";
 import verificationRoutes from "./routes/verification.routes";
 import tripRoutes from "./routes/trip.routes";
-
-dotenv.config();
 
 const app = express();
 
